@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fill-in-the-blank story</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">A fill-in-the-blank word game</p>
+      <h1>Fill-in-the-blank story</h1>
+      <p class="subtitle">
+        <a href="https://studentandwriter.com/" target="_blank" rel="noopener noreferrer">Student and Writers Blog</a>
+      </p>
+    </header>
+
+    <section class="idea-card" aria-labelledby="ideas-title">
+      <h2 id="ideas-title">Need word ideas?</h2>
+      <div class="idea-links">
+        <a href="https://studentandwriter.com/?s=nouns" target="_blank" rel="noopener noreferrer">Nouns</a>
+        <a href="https://studentandwriter.com/?s=verbs" target="_blank" rel="noopener noreferrer">Verbs</a>
+        <a href="https://studentandwriter.com/?s=adverbs" target="_blank" rel="noopener noreferrer">Adverbs</a>
+        <a href="https://studentandwriter.com/?s=adjectives" target="_blank" rel="noopener noreferrer">Adjectives</a>
+        <a href="https://studentandwriter.com/?s=exclamations" target="_blank" rel="noopener noreferrer">Exclamations</a>
+        <a href="https://studentandwriter.com/?s=places" target="_blank" rel="noopener noreferrer">Places</a>
+        <a href="https://studentandwriter.com/2014/12/16/list-of-onomatopoeia-words/" target="_blank" rel="noopener noreferrer">Onomatopoeia</a>
+      </div>
+    </section>
+
+    <section class="game-card" aria-labelledby="form-title">
+      <div class="section-heading">
+        <h2 id="form-title">Add your words</h2>
+        <p>Fill every box, then create your story. The labels are written to help your answers fit the sentence better.</p>
+      </div>
+
+      <form id="madLibForm">
+        <div id="inputs" class="input-grid"></div>
+
+        <div class="button-row">
+          <button type="submit">Create story</button>
+          <button type="button" class="secondary" id="exampleBtn">Fill with silly examples</button>
+          <button type="button" class="secondary" id="clearBtn">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="story-card hidden" id="storySection" aria-labelledby="story-title">
+      <div class="story-header">
+        <h2 id="story-title">Your Story</h2>
+        <button type="button" class="secondary" id="copyBtn">Copy story</button>
+      </div>
+      <article id="story" class="story-output"></article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
